@@ -12,8 +12,9 @@ for using it follow this steps:
                 "output": "/assets/mxgraph"
               }
 4. move mxgraph resource like images and xml to /assets/mxgraph.
-5. set mxBasePath = 'assets/mxgraph/' in initializing app (you can add this to build-> options->scripts as js file).
-6. finally download this definition type and put it into tsconfig.json -> compilerOptions-> typeRoots like this
+5. put "node_modules/mxgraph/javascript/mxClient.js" to angular.json -> build-> options->scripts
+6. set mxBasePath = 'assets/mxgraph/' in initializing app (you can add this to build-> options->scripts as js file).
+7. finally download this definition type and put it into tsconfig.json -> compilerOptions-> typeRoots like this
       "typeRoots": [
       "node_modules/@types",
       "src/mxgraphtyping"
